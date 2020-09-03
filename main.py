@@ -1,7 +1,3 @@
-"""
-TODO
-    serch_cafeでぐるなびAPIから情報を受け取る｡
-"""
 import os
 
 from cafe_module.address.input_user_address import input_user_address
