@@ -5,18 +5,12 @@ TODO
 import os
 import requests
 
+from Cafe import Cafe
+
 URL = 'https://api.gnavi.co.jp/RestSearchAPI/v3/'
 KEY_ID = os.environ["key_id"]
 FREEWORD = 'cafe'
 hit_per_page = 10
-
-
-class Cafe(object):
-    def __init__(self, name):
-        self.name = name
-
-    def get_cafe_info(self):
-        return f"Name:{self.name}"
 
 
 def search_cafe(address):
