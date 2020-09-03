@@ -9,3 +9,4 @@ API:ぐるなびAPI
 ##TODO
 
 - [ ] ぐるなびAPIからリスト形式でソースを受け取る｡
+    - [ ]パラメーターはfreewordとaddress
