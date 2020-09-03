@@ -13,6 +13,20 @@ FREEWORD = 'cafe'
 hit_per_page = 10
 
 
+
+def input_user_address():
+    disable_list = ['<','>']
+    add_1 = input('都道府県を入力>>>')
+    address_1 = add_1.replace('<', '')
+
+    # abcdefghijklmnopqrstuvwxyz!"#$%&()-=^~¥|@`[]{}:*;+<>,./?_
+    add_2 = input('市区町村を入力>>>')
+    address_2 = add_2.replace('<', ' ')
+    return address_1 + address_2
+
+
+
+
 def search_cafe(address):
     response = requests.get(URL, params=dict(keyid=KEY_ID, freeword=FREEWORD, address=address,
                                              hit_per_page=hit_per_page))
