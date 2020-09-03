@@ -2,10 +2,11 @@
 TODO
     serch_cafeでぐるなびAPIから情報を受け取る｡
 """
+import os
 import requests
 
 URL = 'https://api.gnavi.co.jp/RestSearchAPI/v3/'
-KEY_ID = '41c9d06d00a75002e081b8097f9ae199'
+KEY_ID = os.environ["key_id"]
 FREEWORD = 'cafe'
 hit_per_page = 10
 
