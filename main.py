@@ -36,7 +36,7 @@ def search_cafe(address):
 
 
 def main():
-    address = '埼玉県'
+    address = input_user_address()
     cafes = search_cafe(address)
 
     for cafe in cafes:
