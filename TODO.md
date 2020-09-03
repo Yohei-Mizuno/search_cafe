@@ -9,4 +9,9 @@ API:ぐるなびAPI
 ##TODO
 
 - [ ] ぐるなびAPIからリスト形式でソースを受け取る｡
-    - [ ]パラメーターはfreewordとaddress
+    - [ ]パラメーターはfreewordとaddress,Keyid
+    
+    
+## リファクタリング
+  関数やクラスのページを分ける｡
+  メインを移動させる｡
